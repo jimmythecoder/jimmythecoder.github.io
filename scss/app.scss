@@ -1,0 +1,86 @@
+@import 'config';
+
+html, body {
+	font-family: map-get($fonts, body);
+	background-image: url('../img/body-background.png');
+	color: map-get($colors, body-font);
+	text-rendering: optimizeLegibility;
+}
+
+.img-responsive {
+	max-width: 100%;
+}
+
+.container {
+	background-color: white;
+}
+
+h1 {
+	margin: 0.5em 0 0 0;
+	color: white;
+	font-family: map-get($fonts, raleway);
+	font-size: 2.5em;
+	letter-spacing: 1em;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-rendering: optimizeLegibility;
+	line-height: 1.5em;
+}
+
+h2 {
+	font-family: map-get($fonts, raleway);
+	color: map-get($colors, pink);
+	font-size: 1em;
+	letter-spacing: 1em;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+h3 {
+	font-family: map-get($fonts, raleway);
+	color: map-get($colors, pink);
+	text-transform: uppercase;
+	background-color: map-get($colors, dark-grey);
+	font-size: 0.8em;
+	text-align: center;
+	font-weight: 300;
+	margin: 2em 0 0 0;
+	padding: 0.6em 0;
+	letter-spacing: 0.4em;
+}
+
+nav {
+	background-color: map-get($colors, pink);
+	margin-left: 2em;
+	padding: 0 1em;
+	height: 100%;
+
+	.profile-photo {
+		margin-top: 5em;
+	}
+
+	h2 {
+
+	}
+}
+
+main {
+	margin-right: 2em;
+	margin-left: 1em;
+
+	hr.thin {
+		width: 100px;
+		border-color: map-get($colors, pink);
+	}
+
+	p {
+		font-family: map-get($fonts, body);
+		font-size: 0.9em;
+	}
+}
+
+header {
+	padding: 1em;
+	text-align: center;
+	background-color: map-get($colors, dark-grey);
+}
