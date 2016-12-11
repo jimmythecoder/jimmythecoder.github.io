@@ -7,7 +7,7 @@ module.exports = function (gulp, options, plugins) {
     const sources = {
 
         sass: [
-            './scss/*.scss',
+            './src/scss/*.scss',
         ],
         typescript: tsconfig.include
     };
@@ -18,7 +18,7 @@ module.exports = function (gulp, options, plugins) {
 
         gulp.watch(sources.sass, ['sass']);
         gulp.watch(sources.typescript, ['typescript']);
-        gulp.watch("./*.html").on('change', browserSync.reload);
+        gulp.watch("./src/*.html").on('change', browserSync.reload);
         
     });
 };

@@ -7,7 +7,8 @@ module.exports = function (gulp, options, plugins) {
 		browserSync.init({
 			 server: {
 	            baseDir: "./"
-	        }
+	        },
+	        startPath: '/src'
 		});
 	});
 };

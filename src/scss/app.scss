@@ -2,7 +2,7 @@
 
 html, body {
 	font-family: map-get($fonts, body);
-	background-image: url('../img/body-background.png');
+	background-image: url('/src/img/body-background.png');
 	color: map-get($colors, body-font);
 	text-rendering: optimizeLegibility;
 }
