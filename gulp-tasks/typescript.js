@@ -18,7 +18,7 @@ module.exports = function (gulp, options, plugins) {
 		return tsResult.js
 			.pipe(concat('app.js'))
 			.pipe(sourcemaps.write())
-			.pipe(gulp.dest('./js'))
+			.pipe(gulp.dest('./src/js'))
 			.pipe(browserSync.stream());
 	});
 };

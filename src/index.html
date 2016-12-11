@@ -10,7 +10,12 @@
 
 	<title>Jimmythecoder | UX Creative via Hypermedia</title>
 
-	<link rel="stylesheet" href="css/app.min.css">
+	<!-- build:css css/app.min.css -->
+	<link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
+	<link rel="stylesheet" href="../node_modules/flexboxgrid/dist/flexboxgrid.css">
+	
+	<link rel="stylesheet" href="css/app.css">
+	<!-- endbuild -->
 
 	<link href="https://fonts.googleapis.com/css?family=Karla|Montserrat|Open+Sans+Condensed:300|Open+Sans:300|Raleway|Raleway+Dots" rel="stylesheet">
 </head>
@@ -52,6 +57,8 @@
 	    </div>
     </div>
 
-    <script src="js/app.min.js"></script>
+    <!-- build:js js/app.min.js -->
+    <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+    <!-- endbuild -->
 </body>
 </html>
