@@ -16,6 +16,14 @@ namespace app {
 
 				 $('.handle',this).css('left', leftOffset);
 			 });
+
+			 $('section.skills .skills-list .meter').each(function(index: number, elem: Element) {
+				 let value 		= parseInt($(this).data('value'), 10);
+				 let leftOffset = value + '%';
+				 let opacity 	= value / 100;
+
+				 $('.inner',this).css({'width':  leftOffset, opacity: opacity});
+			 });
 		}
 	}
 
