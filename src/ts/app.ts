@@ -14,7 +14,7 @@ namespace app {
 			 $('section.knowledge .range').each(function(index: number, elem: Element) {
 				 let leftOffset = $(this).data('value') + '%';
 
-				 $('.line',this).css('left', leftOffset);
+				 $('.handle',this).css('left', leftOffset);
 			 });
 		}
 	}

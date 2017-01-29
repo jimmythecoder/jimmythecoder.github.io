@@ -147,6 +147,7 @@ nav {
 
 		h4 {
 			margin-bottom: 1.0em;
+			font-size: 0.8em;
 		}
 
 		.range {		
@@ -156,14 +157,16 @@ nav {
 			height: 1px;
 			position: relative;
 
-			.line {
+			.handle {
 				position: absolute;
-				top: -10px;
+				top: -6px;
 				left: 0;
 				display: inline-block;
-				height: 20px;
-				width: 2px;
-				background-color: map-get($colors, dark-grey);
+				height: 10px;
+				width: 10px;
+				border-radius: 10px;
+				border: 1px solid map-get($colors, dark-grey);
+				background-color: map-get($colors, pink);
 			}
 		}
 	}
@@ -232,7 +235,7 @@ main {
 	}
 
 	.role {
-
+		margin-top: 3em;
 	}
 }
 
