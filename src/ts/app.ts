@@ -29,7 +29,7 @@ namespace app {
 
 	export class Email {
 		constructor() {
-			window.location.href = 'mailto:james.harris@jharris.nz';
+			window.location.href = 'mailto:\u006a\u0061\u006d\u0065\u0073\u0040\u006a\u0068\u0061\u0072\u0072\u0069\u0073\u002e\u006e\u007a';
 			return false;
 		}
 	}
