@@ -1,3 +1,3 @@
 # jimmythecoder.github.io
 
-UX Hypermedia creative
+UX Hypermedia creative. [Resum&eacute;](https://jimmythecoder.github.io)
