@@ -61,7 +61,7 @@ namespace app {
 			var pack = d3.pack()
 				.size([width - 4, width - 4]);
 
-			d3.json("js/skills.json", function(error: any, root: any) {
+			d3.json("/js/skills.json", function(error: any, root: any) {
 
 				if (error) {
 					throw error;

@@ -67,7 +67,7 @@
    ]
   },
   {
-   "name": "compliance",
+   "name": "accessibility",
    "children": [
       {"name": "Accessibility", "size": 95},
       {"name": "il8n", "size": 40}
