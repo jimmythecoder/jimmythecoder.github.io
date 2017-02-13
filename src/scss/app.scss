@@ -79,7 +79,12 @@ nav {
 	height: 100%;
 
 	.profile-photo {
-		margin-top: 5em;
+		text-align: center;
+
+		img {
+			margin-top: 5em;
+			display: inline-block;
+		}
 	}
 
 	h2 {
@@ -240,51 +245,43 @@ main {
 
 	section.skills {
 
-		.line {
-			display: inline-block;
-			width: 0px;
-			height: 100%;
-			border: 1px solid map-get($colors, pink);
-			border-style: dashed;
-			opacity: 0.5;
-		}
+		.chart-container {
+			height: 0;             /* collapse the container's height */
+			width: 100%;    /* specify any width you want (a percentage value, basically) */
+			/* apply a padding using the following formula */
+			/* this formula makes sure the aspect ratio of the container equals that of the svg graphic */
+			padding-top: 100%;
+			position: relative;    /* create positioning context for svg */
 
-		.skills-list {
-
-			list-style-type: none;
-			padding: 0;
-			margin: 0;
-
-			li {
-				line-height: 2em;
-				font-size: 0.9em;
-			}
-
-			&.right-align {
-				text-align: right;
-			}
-
-			.meter {
-				display: inline-block;
-				position: relative;
-				top: -2px;
-				width: 100px;
-				height: 5px;
-				border: 1px solid #EEE;
-				margin-left: 10px;
-				margin-right: 10px;
-
-				.inner {
-					position: absolute;
-					top: 0;
-					left: 0;
-					display: inline-block;
-					width: 50%;
-					height: 100%;
-					background: linear-gradient(to right, rgba(225,214,206,1) 0%, rgba(225,214,206,1) 50%, rgba(225,214,206,0.30) 100%);
-				}
+			svg {
+				position: absolute;
+				top: 0;
+				left: 0;
 			}
 		}
+
+		.skills-chart {
+			circle {
+				fill: map-get($colors, light-grey);
+				fill-opacity: .1;
+				stroke: map-get($colors, light-grey);
+				stroke-opacity: 0.3;
+				stroke-width: 1px;
+			}
+
+			.leaf circle {
+				fill: map-get($colors, pink);
+				fill-opacity: 0.9;
+			}
+
+			text {
+				font-size: 12px;
+				font-family: map-get($fonts, condensed);
+				text-anchor: middle;
+			}
+
+		}
+
 	}
 }
 
@@ -294,4 +291,62 @@ header {
 	background-color: map-get($colors, dark-grey);
 	border-bottom-right-radius: 2px;
 	border-bottom-left-radius: 2px;
+}
+
+/** Tablet **/
+@media only screen and (max-width: map-get($screen, 'md-min')) {
+
+	header {
+		h1 {
+			margin: 0.5em 0 0 0;
+			font-size: 2em;
+			letter-spacing: 1em;
+			font-weight: 300;
+			line-height: 1.0em;
+		}
+
+		h2 {
+			font-size: 0.8em;
+			letter-spacing: 1em;
+			font-weight: 300;
+		}
+	}
+
+	nav {
+		margin: 0 1em;
+	}
+
+	main {
+		margin: 1em;
+	}
+
+}
+
+/** Mobile **/
+@media only screen and (max-width: map-get($screen, 'xs-min')) {
+
+	header {
+		h1 {
+			margin: 0.5em 0 0 0;
+			font-size: 2em;
+			letter-spacing: 1em;
+			font-weight: 300;
+			line-height: 1.0em;
+		}
+
+		h2 {
+			font-size: 0.8em;
+			letter-spacing: 1em;
+			font-weight: 300;
+		}
+	}
+
+	nav {
+		margin: 0 1em;
+	}
+
+	main {
+		margin: 1em;
+	}
+
 }
