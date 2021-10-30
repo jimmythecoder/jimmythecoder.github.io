@@ -53,26 +53,7 @@ module.exports = function(env, argv) {
                             target: 'ES6'
                         }
                     }
-                },
-                {
-                    test: /\.(ttf|eot|woff|woff2)$/,
-                    type: "asset/resource",
-                    generator: {
-                        filename: `assets/fonts/[hash][ext][query]`
-                    }
-                },
-                {
-                    test: /\.(gif|jpg|jpeg|png|svg)$/,
-                    type: "asset",
-                    generator: {
-                        filename: `assets/img/[hash][ext][query]`
-                    },
-                    parser: {
-                        dataUrlCondition: {
-                            maxSize: 20 * 1024 // 20kb
-                        }
-                    }
-                },
+                }
             ]
         },
 
