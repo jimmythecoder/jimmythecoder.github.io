@@ -1,0 +1,275 @@
+@import '_vars.css';
+@import 'icons.css';
+
+html, body {
+	font-family: var(--fonts-body);
+	background-image: url('/assets/img/body-background.png');
+	color: var(--colors-body-font);
+	font-size: 18px;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+
+.img-responsive {
+	max-width: 100%;
+}
+
+.container {
+	background-color: white;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+h1 {
+	margin: 0.5em 0 0 0;
+	color: white;
+	font-family: var(--fonts-raleway);
+	font-size: 2.5em;
+	letter-spacing: 1em;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-rendering: optimizeLegibility;
+	line-height: 1.5em;
+}
+
+h2 {
+	font-family: var(--fonts-raleway);
+	color: var(--colors-pink);
+	font-size: 1em;
+	letter-spacing: 1em;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+h3 {
+	font-family: var(--fonts-raleway);
+	color: var(--colors-pink);
+	text-transform: uppercase;
+	background-color: var(--colors-dark-grey);
+	font-size: 14px;
+	text-align: center;
+	font-weight: 700;
+	margin: 2em 0 1em 0;
+	padding: 0.6em 0;
+	letter-spacing: 0.4em; 
+	border-radius: 2px;
+}
+
+h4 {
+	font-family: var(--fonts-raleway);
+	color: var(--colors-dark-grey);
+	text-align: center;
+	margin: 1em 0 0 0;
+	letter-spacing: 0.4em;
+	font-size: 0.9em;
+}
+
+nav {
+	background-color: var(--colors-pink);
+	margin-left: 2em;
+	padding: 0 1em;
+	height: 100%;
+	font-size: 14px;
+}
+
+nav.profile-photo {
+	text-align: center;
+}
+
+nav.profile-photo img {
+	margin-top: 5em;
+	display: inline-block;
+}
+
+nav address {
+	font-family: var(--fonts-body);
+	color: var(--colors-dark-grey);
+	margin-left: 10px;
+	font-weight: 600;
+	line-height: 2em;
+}
+
+nav a, nav a:visited {
+	text-decoration: none;
+	color: var(--colors-body-font);
+	font-weight: bold;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+nav .expertise {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav .expertise li {
+	margin-left: 10px;
+	color: var(--colors-dark-grey);
+	letter-spacing: 3px;
+	font-weight: 600;
+	line-height: 3em;
+}
+
+nav section p {
+	margin-left: 10px;
+	font-size: 16px;
+}
+
+main {
+	margin-right: 2em;
+	margin-left: 1em;
+}
+
+main hr.thin {
+	width: 100px;
+	border-color: var(--colors-pink);
+}
+
+main p {
+	font-family: var(--fonts-body);
+}
+
+main .highlights {
+	padding-left: 5em;
+}
+
+main .highlights li {
+	font-size: 0.9em;
+}
+
+main .divider {
+	text-align: center;
+	margin: 3em 25% 1em;
+}
+
+main .divider hr {
+	background: none;
+	border: none;
+	border-bottom: 1px solid #999;
+	height: 1px;
+	margin: 0;
+	padding: 0;
+}
+
+main .divider .diamond {
+	position: relative;
+	display: inline-block;
+	top: -0.8em;
+	width: 1.5em;
+	height: 1.5em;
+	border: 1px solid #999;
+	transform: rotate(45deg);
+	background-color: white;
+	border-radius:2px;
+}
+
+main .role {
+	margin-top: 3em;
+}
+
+main section.skills .chart-container {
+	height: 0;             /* collapse the container's height */
+	width: 100%;    /* specify any width you want (a percentage value, basically) */
+	/* apply a padding using the following formula */
+	/* this formula makes sure the aspect ratio of the container equals that of the svg graphic */
+	padding-top: 100%;
+	position: relative;    /* create positioning context for svg */
+}
+
+main section.skills .chart-container svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+main section.skills .skills-chart circle {
+	fill: var(--colors-light-grey);
+	fill-opacity: .1;
+	stroke: var(--colors-light-grey);
+	stroke-opacity: 0.3;
+	stroke-width: 1px;
+}
+
+main section.skills .skills-chart .leaf circle {
+	fill: var(--colors-pink);
+	fill-opacity: 0.9;
+}
+
+main section.skills .skills-chart text {
+	font-size: 12px;
+	font-family: var(--fonts-condensed);
+	text-anchor: middle;
+}
+
+header {
+	padding: 1em;
+	text-align: center;
+	background-color: var(--colors-dark-grey);
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+/** Tablet **/
+@media only screen and (max-width: var(--screen-md-min)) {
+
+	header h1 {
+		margin: 0.5em 0 0 0;
+		font-size: 2em;
+		letter-spacing: 1em;
+		font-weight: 300;
+		line-height: 1.0em;
+	}
+
+	header h2 {
+		font-size: 0.8em;
+		letter-spacing: 1em;
+		font-weight: 300;
+	}
+	
+	nav {
+		margin: 0 1em;
+	}
+
+	main {
+		margin: 1em;
+	}
+}
+
+/** Mobile **/
+@media only screen and (max-width: var(--screen-xs-min)) {
+
+	header h1 {
+		margin: 0.5em 0 0 0;
+		font-size: 2em;
+		letter-spacing: 1em;
+		font-weight: 300;
+		line-height: 1.0em;
+	}
+
+	header h2 {
+		font-size: 0.8em;
+		letter-spacing: 1em;
+		font-weight: 300;
+	}
+	
+	nav {
+		margin: 0 1em;
+	}
+
+	main {
+		margin: 1em;
+	}
+}

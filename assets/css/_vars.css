@@ -1,0 +1,17 @@
+:root {
+	--screen-xs-min: 30em;
+	--screen-sm-min: 48em;
+	--screen-md-min: 64em;
+	--screen-lg-min: 75em;
+
+	--colors-pink: #E1D6CE;
+	--colors-dark-grey: #333;
+	--colors-light-grey: #666;
+	--colors-body-font: #333;
+
+	--fonts-montserrat: 'Montserrat';
+	--fonts-body: 'Open Sans';
+	--fonts-condensed: 'Open Sans Condensed';
+	--fonts-raleway: 'Raleway';
+	--fonts-karla: 'Karla';
+}

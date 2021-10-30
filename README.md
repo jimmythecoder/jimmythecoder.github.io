@@ -1,3 +1,3 @@
-# jimmythecoder.github.io
+# dev.jharris.nz
 
-UX Hypermedia creative. [Resum&eacute;](https://jimmythecoder.github.io)
+UX Hypermedia creative. [Resum&eacute;](https://dev.jharris.nz)
