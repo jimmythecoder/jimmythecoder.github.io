@@ -17,7 +17,6 @@
       {"name": "Angular", "size": 60},
       {"name": "VueJS", "size": 110},
       {"name": "Nuxt", "size": 90},
-      {"name": "CDK", "size": 90},
       {"name": "Vite", "size": 30}
    ]
   },
@@ -37,16 +36,17 @@
       {"name": "Agile Scrum", "size": 90},
       {"name": "CI Delivery", "size": 90},
       {"name": "TDD", "size": 40},
-      {"name": "Architecture", "size": 80},
+      {"name": "App Scaling", "size": 80},
       {"name": "User testing", "size": 90}
    ]
   },
   {
    "name": "infrastructure",
    "children": [
-      {"name": "Servers", "size": 90},
-      {"name": "Linux", "size": 80},
-      {"name": "Security", "size": 60}
+      {"name": "Serverless", "size": 90},
+      {"name": "CDK", "size": 80},
+      {"name": "AWS", "size": 60},
+      {"name": "CDN", "size": 60}
    ]
   },
   {
@@ -56,6 +56,15 @@
       {"name": "InfoSec", "size": 70},
       {"name": "i8ln", "size": 80},
       {"name": "A11y", "size": 50}
+   ]
+  },
+  {
+   "name": "Emerging",
+   "children": [
+      {"name": "ML", "size": 60},
+      {"name": "Blockchain", "size": 70},
+      {"name": "DeFi", "size": 80},
+      {"name": "PWA", "size": 50}
    ]
   }
  ]
