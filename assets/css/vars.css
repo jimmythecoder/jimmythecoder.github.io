@@ -1,8 +1,7 @@
 :root {
-	--screen-xs-min: 30em;
-	--screen-sm-min: 48em;
-	--screen-md-min: 64em;
-	--screen-lg-min: 75em;
+	--screen-xs: 576px;
+	--screen-md: 1200px;
+	--screen-lg: 1440px;
 
 	--colors-pink: #E1D6CE;
 	--colors-dark-grey: #333;

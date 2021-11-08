@@ -5,35 +5,29 @@
    "name": "programming",
    "children": [
       {"name": "JavaScript", "size": 95},
-      {"name": "TypeScript", "size": 80},
-      {"name": "HTML 5", "size": 100},
-      {"name": "CSS 3", "size": 90},
-      {"name": "PHP 7", "size": 70},
-      {"name": "C++", "size": 40},
-      {"name": "Ruby", "size": 30},
+      {"name": "TypeScript", "size": 120},
+      {"name": "HTML5", "size": 100},
+      {"name": "CSS", "size": 90},
       {"name": "Python", "size": 35}
    ]
   },
   {
    "name": "frameworks",
    "children": [
-      {"name": "AngularJS", "size": 100},
-      {"name": "jQuery", "size": 80},
-      {"name": "Bootstrap", "size": 90},
-      {"name": "Bulma", "size": 80},
-      {"name": "Gulp", "size": 90},
-      {"name": "Webpack", "size": 30},
-      {"name": "NodeJS", "size": 60}
+      {"name": "Angular", "size": 60},
+      {"name": "VueJS", "size": 110},
+      {"name": "Nuxt", "size": 90},
+      {"name": "CDK", "size": 90},
+      {"name": "Vite", "size": 30}
    ]
   },
   {
    "name": "design",
    "children": [
-      {"name": "Photoshop", "size": 70},
-      {"name": "Sketch", "size": 80},
-      {"name": "Mobile first", "size": 98},
-      {"name": "SVG", "size": 70},
-      {"name": "UX", "size": 80},
+      {"name": "Sketch", "size": 70},
+      {"name": "Figma", "size": 70},
+      {"name": "SVG", "size": 40},
+      {"name": "UX", "size": 90},
       {"name": "D3", "size": 60}
    ]
   },
@@ -43,10 +37,8 @@
       {"name": "Agile Scrum", "size": 90},
       {"name": "CI Delivery", "size": 90},
       {"name": "TDD", "size": 40},
-      {"name": "Architecture", "size": 90},
-      {"name": "GIT", "size": 70},
-      {"name": "User testing", "size": 80},
-      {"name": "Code quality", "size": 90}
+      {"name": "Architecture", "size": 80},
+      {"name": "User testing", "size": 90}
    ]
   },
   {
@@ -61,16 +53,9 @@
    "name": "other",
    "children": [
       {"name": "SEO", "size": 60},
-      {"name": "OO Dev", "size": 70},
-      {"name": "REST API", "size": 80},
-      {"name": "MVC", "size": 50}
-   ]
-  },
-  {
-   "name": "accessibility",
-   "children": [
-      {"name": "Accessibility", "size": 95},
-      {"name": "il8n", "size": 40}
+      {"name": "InfoSec", "size": 70},
+      {"name": "i8ln", "size": 80},
+      {"name": "A11y", "size": 50}
    ]
   }
  ]
