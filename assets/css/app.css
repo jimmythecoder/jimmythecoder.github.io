@@ -200,6 +200,42 @@ main .role {
 	margin-top: 3em;
 }
 
+main section.skills ul {
+    counter-reset: index;  
+    padding: 0;
+}
+  
+/* List element */
+main section.skills ul li {
+    counter-increment: index; 
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    box-sizing: border-box;
+}
+
+/* Element counter */
+main section.skills ul li::before {
+    content: counters(index, ".", decimal-leading-zero);
+    font-size: 1.5rem;
+    text-align: right;
+    font-weight: bold;
+    min-width: 50px;
+    padding-right: 12px;
+    font-variant-numeric: tabular-nums;
+    align-self: flex-start;
+    background-image: linear-gradient(to bottom, var(--colors-body-font), var(--colors-pink));
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Element separation */
+main section.skills ul li + li {
+    border-top: 1px solid rgba(50,50,50,0.2);
+}
+
+
 main section.skills .chart-container {
 	height: 0;             /* collapse the container's height */
 	width: 100%;    /* specify any width you want (a percentage value, basically) */
@@ -258,13 +294,14 @@ main header .head-container {
     z-index: 0;
     opacity: 0.3;
 
-    animation: animate-video 23s ease-in-out infinite;
+    animation: animate-video 25s ease-in-out infinite;
 }
 
 @keyframes animate-video {
     0% {opacity: 0;}
     10% {opacity: 0.1;}
     20% {opacity: 0.5;}
+    30% {opacity: 0.3;}
     60% {opacity: 0.3;}
     80% {opacity: 0.1;}
     100% {opacity: 0.01;}
