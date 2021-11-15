@@ -295,6 +295,7 @@ main header .head-container {
     opacity: 0.3;
 
     animation: animate-video 25s ease-in-out infinite;
+    animation-delay: 3s;
 }
 
 @keyframes animate-video {
