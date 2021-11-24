@@ -38,7 +38,7 @@ main {
 }
 
 .container {
-	background-color: white;
+	background-color: var(--colors-site-bg);
 }
 
 .italic {
@@ -55,7 +55,7 @@ main {
 
 h1 {
 	margin: 0.5em 0 0 0;
-	color: white;
+	color: #FFF;
 	font-family: var(--fonts-raleway);
 	font-size: 2.5em;
 	letter-spacing: 1em;
@@ -78,7 +78,7 @@ h3 {
 	font-family: var(--fonts-raleway);
 	color: var(--colors-pink);
 	text-transform: uppercase;
-	background-color: var(--colors-dark-grey);
+	background-color: var(--colors-heading-background);
 	font-size: 14px;
 	text-align: center;
 	font-weight: 700;
@@ -90,7 +90,7 @@ h3 {
 
 h4 {
 	font-family: var(--fonts-raleway);
-	color: var(--colors-dark-grey);
+	color: var(--colors-subheading);
 	text-align: center;
 	margin: 1em 0 0 0;
 	letter-spacing: 0.4em;
@@ -104,6 +104,7 @@ nav {
 	padding: 0 1em;
 	height: 100%;
 	font-size: 14px;
+    border-radius: 2px;
 }
 
 nav .profile-photo {
@@ -139,17 +140,10 @@ nav .expertise {
 	padding: 0;
 }
 
-nav .expertise li {
-	margin-left: 10px;
-	color: var(--colors-dark-grey);
-	letter-spacing: 3px;
-	font-weight: 600;
-	line-height: 3em;
-}
-
 nav section p {
 	margin-left: 10px;
 	font-size: 16px;
+    color: var(--colors-sidebar-font);
 }
 
 main hr.thin {
@@ -192,7 +186,7 @@ main .divider .diamond {
 	height: 1.5em;
 	border: 1px solid #999;
 	transform: rotate(45deg);
-	background-color: white;
+	background-color: var(--colors-diamond-background);
 	border-radius:2px;
 }
 
@@ -200,14 +194,21 @@ main .role {
 	margin-top: 3em;
 }
 
-main section.skills ul {
-    counter-reset: index;  
+main section.skills ul.gradient {
+    counter-reset: primary; 
+    counter-set: primary 0;
     padding: 0;
+    width: 100%;
+}
+
+main .skills-sections {
+    display: flex;
+    justify-content: space-between;
 }
   
 /* List element */
-main section.skills ul li {
-    counter-increment: index; 
+main ul.gradient li {
+    counter-increment: primary; 
     display: flex;
     align-items: center;
     padding: 12px 0;
@@ -215,8 +216,8 @@ main section.skills ul li {
 }
 
 /* Element counter */
-main section.skills ul li::before {
-    content: counters(index, ".", decimal-leading-zero);
+main ul.gradient li::before {
+    content: counters(primary, ".", decimal-leading-zero);
     font-size: 1.5rem;
     text-align: right;
     font-weight: bold;
@@ -227,11 +228,25 @@ main section.skills ul li::before {
     background-image: linear-gradient(to bottom, var(--colors-body-font), var(--colors-pink));
     background-attachment: fixed;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
+main ul.secondary {
+    counter-reset: secondary; 
+    counter-set: secondary 3;
+}
+
+main ul.secondary li {
+    counter-increment: secondary; 
+}
+
+main ul.secondary li::before {
+    content: counters(secondary, ".", decimal-leading-zero);
+}
+
 /* Element separation */
-main section.skills ul li + li {
+main section.skills ul.gradient li + li {
     border-top: 1px solid rgba(50,50,50,0.2);
 }
 
@@ -293,17 +308,17 @@ main header .head-container {
     top: 0;
     z-index: 0;
     opacity: 0.3;
+    border-radius: 2px;
 
     animation: animate-video 25s ease-in-out infinite;
-    animation-delay: 3s;
 }
 
 @keyframes animate-video {
     0% {opacity: 0;}
-    10% {opacity: 0.1;}
-    20% {opacity: 0.5;}
+    10% {opacity: 0.0;}
+    20% {opacity: 0.1;}
     30% {opacity: 0.3;}
-    60% {opacity: 0.3;}
+    60% {opacity: 0.5;}
     80% {opacity: 0.1;}
     100% {opacity: 0.01;}
 }

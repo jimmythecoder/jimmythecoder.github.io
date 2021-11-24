@@ -32,8 +32,10 @@ module.exports = function(env, argv) {
             compress: true,
             hot: true,
             port,
-            host: 'local-ip',
-            allowedHosts: "all"
+            host: 'localhost',
+            allowedHosts: "all",
+            server: 'https',
+            http2: true
         },
 
         devtool: false,
