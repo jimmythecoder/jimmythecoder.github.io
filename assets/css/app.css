@@ -126,7 +126,7 @@ nav address {
 
 nav a, nav a:visited {
 	text-decoration: none;
-	color: var(--colors-body-font);
+	color: var(--colors-sidebar-font);
 	font-weight: bold;
 }
 
@@ -134,10 +134,14 @@ nav a:hover {
 	text-decoration: underline;
 }
 
-nav .expertise {
+nav .network {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+}
+
+nav .network a {
+    color: var(--colors-sidebar-font);
 }
 
 nav section p {
