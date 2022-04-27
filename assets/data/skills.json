@@ -55,16 +55,17 @@
       {"name": "SEO", "size": 60},
       {"name": "InfoSec", "size": 70},
       {"name": "i8ln", "size": 80},
-      {"name": "A11y", "size": 50}
+      {"name": "A11y", "size": 80}
    ]
   },
   {
    "name": "Emerging",
    "children": [
-      {"name": "ML", "size": 60},
+      {"name": "ML", "size": 40},
       {"name": "Blockchain", "size": 70},
       {"name": "DeFi", "size": 80},
-      {"name": "PWA", "size": 50}
+      {"name": "PWA", "size": 30},
+      {"name": "WEB3", "size": 80}
    ]
   }
  ]
