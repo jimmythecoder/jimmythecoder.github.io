@@ -1,0 +1,72 @@
+{
+ "name": "skills",
+ "children": [
+  {
+   "name": "programming",
+   "children": [
+      {"name": "JavaScript", "size": 95},
+      {"name": "TypeScript", "size": 120},
+      {"name": "HTML5", "size": 100},
+      {"name": "CSS", "size": 90},
+      {"name": "Python", "size": 35}
+   ]
+  },
+  {
+   "name": "frameworks",
+   "children": [
+      {"name": "Angular", "size": 60},
+      {"name": "VueJS", "size": 110},
+      {"name": "Nuxt", "size": 90},
+      {"name": "Vite", "size": 30}
+   ]
+  },
+  {
+   "name": "design",
+   "children": [
+      {"name": "Sketch", "size": 70},
+      {"name": "Figma", "size": 70},
+      {"name": "SVG", "size": 40},
+      {"name": "UX", "size": 90},
+      {"name": "D3", "size": 60}
+   ]
+  },
+  {
+   "name": "process",
+   "children": [
+      {"name": "Agile Scrum", "size": 90},
+      {"name": "CI Delivery", "size": 90},
+      {"name": "TDD", "size": 40},
+      {"name": "App Scaling", "size": 80},
+      {"name": "User testing", "size": 90}
+   ]
+  },
+  {
+   "name": "infrastructure",
+   "children": [
+      {"name": "Serverless", "size": 90},
+      {"name": "CDK", "size": 80},
+      {"name": "AWS", "size": 60},
+      {"name": "CDN", "size": 60}
+   ]
+  },
+  {
+   "name": "other",
+   "children": [
+      {"name": "SEO", "size": 60},
+      {"name": "InfoSec", "size": 70},
+      {"name": "i8ln", "size": 80},
+      {"name": "A11y", "size": 80}
+   ]
+  },
+  {
+   "name": "Emerging",
+   "children": [
+      {"name": "ML / AI", "size": 60},
+      {"name": "Blockchain", "size": 70},
+      {"name": "DeFi", "size": 60},
+      {"name": "PWA", "size": 30},
+      {"name": "WEB3", "size": 80}
+   ]
+  }
+ ]
+}

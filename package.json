@@ -1,35 +1,31 @@
 {
-  "name": "jimmythecoder-github",
-  "version": "2.1.0",
-  "private": true,
-  "description": "UX Creative via Hypermedia",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jimmythecoder/jimmythecoder.github.io"
-  },
-  "scripts": {
-    "start": "webpack serve",
-    "build": "webpack --env production"
-  },
-  "main": "index.html",
-  "author": "James Harris",
-  "license": "Standard",
-  "dependencies": {
-    "@types/d3": "^7.4.0",
-    "@types/jquery": "^3.5.16",
-    "d3": "^7.8.0",
-    "flexboxgrid": "^6.3.1",
-    "jquery": "^3.6.3",
-    "normalize.css": "^8.0.1"
-  },
-  "devDependencies": {
-    "html-webpack-plugin": "^5.5.0",
-    "sass": "^1.57.1",
-    "sass-loader": "^13.2.0",
-    "ts-loader": "^9.4.2",
-    "typescript": "^4.9.4",
-    "webpack": "^5.76.0",
-    "webpack-cli": "^5.0.1",
-    "webpack-dev-server": "^4.11.1"
-  }
+    "name": "jimmythecoder-github",
+    "version": "2.1.0",
+    "private": true,
+    "description": "UX Creative via Hypermedia",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jimmythecoder/jimmythecoder.github.io"
+    },
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "main": "index.html",
+    "author": "James Harris",
+    "license": "Standard",
+    "dependencies": {
+        "@types/d3": "^7.4.3",
+        "@types/jquery": "^3.5.33",
+        "d3": "^7.9.0",
+        "flexboxgrid": "^6.3.1",
+        "jquery": "^3.7.1",
+        "normalize.css": "^8.0.1"
+    },
+    "devDependencies": {
+        "@types/node": "^24.10.1",
+        "typescript": "^5.9.3",
+        "vite": "^7.2.6"
+    }
 }

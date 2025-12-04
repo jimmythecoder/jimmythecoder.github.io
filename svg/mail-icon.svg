@@ -1,0 +1,14 @@
+<svg width="105px" height="72px" viewBox="8 4 105 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <rect id="path-1" x="0" y="0" width="105" height="72" rx="8"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="105" height="72" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(8.000000, 4.000000)">
+        <use id="Rectangle" stroke="#979797" mask="url(#mask-2)" stroke-width="8" xlink:href="#path-1"></use>
+        <path d="M100,5 L52,36" id="Line" stroke="#979797" stroke-width="4" stroke-linecap="round"></path>
+        <path d="M4.5,4.5 L52,36" id="Line" stroke="#979797" stroke-width="4" stroke-linecap="round"></path>
+        <path d="M4.11578903,68.2617871 C51.7700938,36.5878827 100.838324,68.3726131 100.838324,68.3726131" id="Path-2" stroke="#979797"></path>
+    </g>
+</svg>

@@ -1,0 +1,406 @@
+@import 'vars.css';
+@import 'icons.css';
+
+html, body {
+	font-family: var(--fonts-body);
+	background-image: url('/assets/img/body-background.png');
+	color: var(--colors-body-font);
+	font-size: 18px;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	margin: 0;
+	padding: 0;
+}
+
+.grid-container {
+	margin: 0 auto;
+	max-width: 1440px;
+}
+
+.container {
+	padding-top: 1em;
+	display: grid;
+	grid-template-columns: 320px auto;
+	grid-template-rows: auto;
+	grid-template-areas: 
+		"sidebar header"
+		"sidebar main";
+}
+
+main {
+	grid-area: main;
+	margin-right: 2em;
+	margin-left: 2em;
+}
+
+.img-responsive {
+	max-width: 100%;
+}
+
+.container {
+	background-color: var(--colors-site-bg);
+}
+
+.italic {
+	font-style: italic;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+h1 {
+	margin: 0.5em 0 0 0;
+	color: #FFF;
+	font-family: var(--fonts-raleway);
+	font-size: 2.5em;
+	letter-spacing: 1em;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-rendering: optimizeLegibility;
+	line-height: 1.5em;
+}
+
+h2 {
+	font-family: var(--fonts-raleway);
+	color: var(--colors-pink);
+	font-size: 1em;
+	letter-spacing: 1em;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+h3 {
+	font-family: var(--fonts-raleway);
+	color: var(--colors-pink);
+	text-transform: uppercase;
+	background-color: var(--colors-heading-background);
+	font-size: 14px;
+	text-align: center;
+	font-weight: 700;
+	margin: 2em 0 1em 0;
+	padding: 0.8em 0;
+	letter-spacing: 0.4em; 
+	border-radius: 2px;
+}
+
+h4 {
+	font-family: var(--fonts-raleway);
+	color: var(--colors-body-font);
+	text-align: center;
+	margin: 1em 0 0 0;
+	letter-spacing: 0.4em;
+	font-size: 0.9em;
+}
+
+nav {
+	grid-area: sidebar;
+	background-color: var(--colors-pink);
+	margin-left: 2em;
+	padding: 0 1em;
+	height: 100%;
+	font-size: 14px;
+    border-radius: 2px;
+}
+
+nav .profile-photo {
+	text-align: center;
+}
+
+nav .profile-photo img {
+	margin-top: 2em;
+	display: inline-block;
+}
+
+nav address {
+	font-family: var(--fonts-body);
+	color: var(--colors-dark-grey);
+	margin-left: 10px;
+	font-weight: 600;
+	line-height: 2em;
+}
+
+nav a, nav a:visited {
+	text-decoration: none;
+	color: var(--colors-sidebar-font);
+	font-weight: bold;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+nav .network {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav .network a {
+    color: var(--colors-sidebar-font);
+}
+
+nav section p {
+	margin-left: 10px;
+	font-size: 16px;
+    color: var(--colors-sidebar-font);
+}
+
+main hr.thin {
+	width: 20%;
+	border-color: var(--colors-pink);
+}
+
+main p {
+	font-family: var(--fonts-body);
+}
+
+main .highlights {
+	padding-left: 2em;
+	list-style-type: "\2713\0020";
+}
+
+main .highlights li {
+	font-size: 0.9em;
+}
+
+main .divider {
+	text-align: center;
+	margin: 3em 25% 1em;
+}
+
+main .divider hr {
+	background: none;
+	border: none;
+	border-bottom: 1px solid #999;
+	height: 1px;
+	margin: 0;
+	padding: 0;
+}
+
+main .divider .diamond {
+	position: relative;
+	display: inline-block;
+	top: -0.8em;
+	width: 1.5em;
+	height: 1.5em;
+	border: 1px solid #999;
+	transform: rotate(45deg);
+	background-color: var(--colors-diamond-background);
+	border-radius:2px;
+}
+
+main .role {
+	margin-top: 3em;
+}
+
+main section.skills ul.gradient {
+    counter-reset: primary; 
+    counter-set: primary 0;
+    padding: 0;
+    width: 100%;
+}
+
+main .skills-sections {
+    display: flex;
+    justify-content: space-between;
+}
+  
+/* List element */
+main ul.gradient li {
+    counter-increment: primary; 
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    box-sizing: border-box;
+}
+
+/* Element counter */
+main ul.gradient li::before {
+    content: counters(primary, ".", decimal-leading-zero);
+    font-size: 1.5rem;
+    text-align: right;
+    font-weight: bold;
+    min-width: 50px;
+    padding-right: 12px;
+    font-variant-numeric: tabular-nums;
+    align-self: flex-start;
+    background-image: linear-gradient(to bottom, var(--colors-body-font), var(--colors-pink));
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main ul.secondary {
+    counter-reset: secondary; 
+    counter-set: secondary 3;
+}
+
+main ul.secondary li {
+    counter-increment: secondary; 
+}
+
+main ul.secondary li::before {
+    content: counters(secondary, ".", decimal-leading-zero);
+}
+
+/* Element separation */
+main section.skills ul.gradient li + li {
+    border-top: 1px solid rgba(50,50,50,0.2);
+}
+
+
+main section.skills .chart-container {
+	height: 0;             /* collapse the container's height */
+	width: 100%;    /* specify any width you want (a percentage value, basically) */
+	/* apply a padding using the following formula */
+	/* this formula makes sure the aspect ratio of the container equals that of the svg graphic */
+	padding-top: 100%;
+	position: relative;    /* create positioning context for svg */
+}
+
+main section.skills .chart-container svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+main section.skills .skills-chart circle {
+	fill: var(--colors-light-grey);
+	fill-opacity: .1;
+	stroke: var(--colors-light-grey);
+	stroke-opacity: 0.3;
+	stroke-width: 1px;
+}
+
+main section.skills .skills-chart .leaf circle {
+	fill: var(--colors-pink);
+	fill-opacity: 0.9;
+}
+
+main section.skills .skills-chart text {
+	font-size: 12px;
+	font-family: var(--fonts-karla);
+	text-anchor: middle;
+}
+
+main header {
+    position: relative;
+	grid-area: header;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+    background: var(--colors-dark-grey);
+}
+
+main header .head-container {
+    padding: 1em;
+    text-align: center;
+    z-index: 1;
+}
+
+#video-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    opacity: 0.3;
+    border-radius: 2px;
+
+    animation: animate-video 25s ease-in-out infinite;
+}
+
+@keyframes animate-video {
+    0% {opacity: 0;}
+    10% {opacity: 0.0;}
+    20% {opacity: 0.1;}
+    30% {opacity: 0.3;}
+    60% {opacity: 0.5;}
+    80% {opacity: 0.1;}
+    100% {opacity: 0.01;}
+}
+
+main header h1 {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	letter-spacing: 0.8em;
+	text-align: center;
+}
+
+main header h1 span {
+	display: block;
+}
+
+/** Tablet **/
+@media only screen and (max-width: 1200px) {
+
+	main header h1 {
+		font-size: 2em;
+		letter-spacing: 0.5em;
+		font-weight: 300;
+		line-height: 1.0em;
+	}
+
+	main header h2 {
+		font-size: 0.8em;
+		letter-spacing: 0.5em;
+		font-weight: 300;
+	}
+	
+	nav {
+		margin: 0 1em;
+	}
+
+	main {
+		margin: 1em;
+	}
+}
+
+/** Mobile **/
+@media only screen and (max-width: 576px) {
+
+	header h1 {
+		margin: 0.5em 0 0 0;
+		font-size: 2em;
+		letter-spacing: 1em;
+		font-weight: 300;
+		line-height: 1.0em;
+	}
+
+	header h2 {
+		font-size: 0.8em;
+		letter-spacing: 1em;
+		font-weight: 300;
+	}
+
+	.container {
+		padding: 0;
+		grid-template-columns: auto;
+		grid-template-areas: 
+			"header"
+			"main"
+			"sidebar";
+	}
+	
+	nav {
+		margin: 0;
+		padding: 0.6em;
+	}
+
+	main {
+		margin: 0;
+		padding: 0.6em;
+	}
+
+	nav .profile-photo img {
+		margin-top: 1em;
+	}
+}
